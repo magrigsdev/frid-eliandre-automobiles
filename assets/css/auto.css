@@ -1,0 +1,45 @@
+
+:root{
+    --grey:#888;
+    --bckground:#161616;
+    --white:#fff;
+    --black:#000;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bckground);
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--white);
+  }
+  
