@@ -1,7 +1,7 @@
 
 :root{
     --grey:#888;
-    --bckground:#161616;
+    --background:#161616;
     --white:#fff;
     --black:#000;
 }
@@ -14,7 +14,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bckground);
+    background-color: var(--background);
     padding: 10px;
   }
   
@@ -27,6 +27,8 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
+
+     
   }
   
   .nav-links li {
@@ -40,6 +42,9 @@ nav {
   }
   
   .nav-links li a:hover {
+    color: var(--white);
+  }
+  .active {
     color: var(--white);
   }
   
