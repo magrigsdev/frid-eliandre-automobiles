@@ -1,50 +1,91 @@
 
 :root{
     --grey:#888;
-    --background:#161616;
+    --dark:#161616;
     --white:#fff;
     --black:#000;
+    --orange:#EC9704;
+
+    --base:#FF3387;
+    --sous_base:#FF33ED;
+
+
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-
-
+/* font style */
+/* font-family: 'Lato', sans-serif; */
 
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--background);
-    padding: 10px;
-  }
-  
-  .logo img {
-    height: 50px;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  background-color: var(--white);
+  color: var(--dark);
+  width: 100%;
+  height: 50px;
+  padding: 10;
+  font-family: 'lato';
+}
 
-     
-  }
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  flex-direction: row;
   
-  .nav-links li {
-    margin-left: 20px;
-  }
+}
+
+.menu li {
+  margin-left: 1rem;
+  padding: 10px;
+}
+
+.menu li a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu li a:hover {
+  color: var(--base)
+  ;
+}
+
+.active{
+  color: var(--base) !important;
+}
+
+.logo{
+  width: 35px;
+  height: 35px;
+}
+  /* Responsive layout - makes a one column 
+  layout instead of a two-column layout  tablette portable*/
+  @media (max-width: 800px) {
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav {
+      background-color: var(--white);
+      color: var(--dark);
+      width: 100%;
+      height: fit-content;
+      padding: 10;
+    }
+
+    .menu {
+      flex-direction: column;
+    }
+   
+    
   
-  .nav-links li a {
-    color: var(--grey);
-    text-decoration: none;
-    font-size: 16px;
   }
-  
-  .nav-links li a:hover {
-    color: var(--white);
-  }
-  .active {
-    color: var(--white);
-  }
-  
