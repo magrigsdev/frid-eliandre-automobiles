@@ -6,8 +6,7 @@
     --black:#000;
     --orange:#EC9704;
 
-    --base:#FF3387;
-    --sous_base:#FF33ED;
+    --red:#C70039;
 
 
 }
@@ -23,12 +22,12 @@
 
 
 nav {
-  background-color: rgba(19, 18, 18, 0.048);
+  background-color: var(--red);
   color: var(--dark);
   width: 100%;
   height: 50px;
   padding: 10;
-  font-family: 'lato';
+  font-family: 'Rokkit', sans-serif;
 }
 
 .menu {
@@ -54,12 +53,12 @@ nav {
 }
 
 .menu li a:hover {
-  color: var(--base);
+  color: var(--white);
   
 }
 
 .active{
-  color: var(--base) !important;
+  color: var(--white) !important;
   font-weight: bold;
 }
 
@@ -72,7 +71,7 @@ nav {
 .banner{
   width: 100%;
   height: 500px;
-  background-image: url('../pictures/banner.jpg');
+  background-image: url('../pictures/856704.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -92,15 +91,12 @@ nav {
   right: 25%;
   top:20%;
 
-  
-  
-
 }
 .banner_text h1{
   font-family: 'Rokkitt', serif;
   font-size: xx-large;
   text-transform: uppercase;
-  color: #FF3387;
+  color: var(--red);
   margin-bottom: 10px;
 }
 .banner_text h2{
@@ -112,13 +108,50 @@ nav {
 
 /* **********************  fin de banner ************************* */
 
+section .partie1{
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--red);
+  font-family: 'lato', sans-serif;
+  margin-bottom: 10px;
+  font-size: xx-large;
+}
+
+section hr{
+  background-color: var(--red);
+  margin: auto;
+  width: 10%;
+  height: 5px;
+  margin-top: 10px;
+}
 
 
+/* deuxième parie */
+section .parti2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section .voiture{
+  margin: 20px;
+	text-align: center;
+}
 
+.voiture img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10%;
 
-
-
-/* **********************  fin de banner ************************* */
+}
+.voiture h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+/* **********************  fin de section ************************* */
 
 
   /* Responsive layout - makes a one column 
@@ -132,7 +165,7 @@ nav {
     }
 
     nav {
-      background-color: rgba(19, 18, 18, 0.048);
+      background-color: var(--red);
       color: var(--dark);
       width: 100%;
       height: fit-content;
