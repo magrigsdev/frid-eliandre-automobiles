@@ -1,0 +1,84 @@
+:root{
+    --couleur_base:#ff000f;
+}
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ 
+
+/* header */
+
+.banner {
+    background-image: url("../pictures/964862.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+  }
+  
+
+
+    header {
+        font-family: 'Roboto', sans-serif;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        margin: 0 10px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+
+
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    ul {
+      margin: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+  
