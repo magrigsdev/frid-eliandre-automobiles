@@ -1,5 +1,11 @@
 :root{
-    --couleur_base:#ff000f;
+    
+    --bleue_base:#06668C;
+    --bleue_second:#427AA1;
+    --blanc:#EBF2FA;
+    --vert_base:#679436;
+    --vert_second:#A4BD01;
+    --gris:#333;
 }
  
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -7,26 +13,11 @@
 
 /* header */
 
-.banner {
-    background-image: url("../pictures/964862.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .banner h1 {
-    color: #fff;
-    font-size: 4rem;
-    text-align: center;
-    text-shadow: 2px 2px #000;
-  }
+
   
 
 
-    header {
+  header {
         font-family: 'Roboto', sans-serif;
         background-color: transparent;
         position: fixed;
@@ -37,6 +28,7 @@
     }
     
     nav {
+      
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -60,9 +52,46 @@
     
     a {
         text-decoration: none;
-        color: #333;
+        color: var(--gris);
+    }
+    .active{
+        color: var(--bleue_base) !important;
+        font-weight: bold;
     }
 
+
+    .banner {
+        background-image: url("../pictures/fonds/luke-chesser-pJadQetzTkI-unsplash.jpg ");
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-right: 40px;
+      }
+      
+      .banner h1 {
+        color: var(--blanc);
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 2px 2px var(--gris);
+      }
+      
+      .banner h5{       
+        color: var(--blanc);
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: 2px 2px var(--gris);
+      }
+      .banner h6{
+        color: var(--blanc);
+        font-size: 1rem;
+        text-align: center;
+        text-shadow: 2px 2px var(--gris);
+    }
 
 
   
