@@ -6,33 +6,41 @@
     --vert_base:#679436;
     --vert_second:#A4BD01;
     --gris:#333;
+    --ecart-haute:50px;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
 }
  
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
  
 
 /* header */
 
 
   
-
-
-  header {
-        font-family: 'Roboto', sans-serif;
-        background-color: transparent;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
-    }
-    
+  
     nav {
       
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px;
+
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--blanc);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
     }
     
     .logo img {
@@ -78,6 +86,7 @@
         font-size: 3rem;
         text-align: center;
         text-shadow: 2px 2px var(--gris);
+        margin-bottom: 20px;
       }
       
       .banner h5{       
@@ -85,6 +94,7 @@
         font-size: 1.5rem;
         text-align: center;
         text-shadow: 2px 2px var(--gris);
+        margin-bottom: 20px;
       }
       .banner h6{
         color: var(--blanc);
@@ -93,9 +103,42 @@
         text-shadow: 2px 2px var(--gris);
         border-left: var(--blanc) 5px solid;
         padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+/* DEBUT DE CORPS   */    
+    .corps{
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      justify-content: space-between;
+
+      padding-right: 40px;
+      background-color: var(--blanc);
+    }
+
+    .corps h1 {
+      font-family: 'Cantarell', sans-serif;
+      margin-top: var(--ecart-haute);
+      color: var(--vert_base);
+      font-size: 2.5rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .corps hr {
+     width:10% ;
+     height: 5px;
+     background-color: var(--vert_base);
+     text-align: center;
+     margin:20px auto;
     }
 
 
+/* FIN DE CORPS   */
   
   @media only screen and (max-width: 768px) {
     nav {
