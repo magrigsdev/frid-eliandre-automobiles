@@ -7,7 +7,13 @@
     --vert_base:#679436;
     --vert_second:#A4BD01;
     --gris:#333;
+    --gris-claire:#ddd;
     --ecart-haute:50px;
+
+    /* autres fonds*/
+    --fond1:rgb(252, 246, 246);
+    --fond2:#f6fbfd;
+    --fond3:#faf6f0;
 }
 
 *{
@@ -171,17 +177,86 @@
     }
     .toyota_yaris .deux ol li {
     margin-bottom: 4px;
-    
-      
+        
     }
 
 
 /* FIN DE CORPS   */
 
 /* DEBUT DE GAME */
+.game_toyota{
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  /* justify-content: space-between; */
 
+  padding: 20px;
+  background-color : var(--fond3);
+}
+
+  .game_toyota h1 {
+    font-family: 'Cantarell', sans-serif;
+    margin-top: var(--ecart-haute);
+    color: var(--gris);
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .game_toyota hr {
+  width:8% ;
+  height: 5px;
+  background-color: var(--bleue_base);
+  text-align: center;
+  margin:20px auto;
+  }
 /* FIN DE GAMMES */
-  
+  .game_toyota .list_voitures{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+
+  }
+  .list_voitures_items{
+    font-family: 'Lato', sans-serif;
+    height: 50vh;
+    border-radius: 5px;
+    border-bottom: var(--vert_base) 2px solid;
+    padding: 10px;
+    color: var(--gris);
+    
+  }
+  .list_voitures_items h3{
+  font-family: 'Lato', sans-serif;
+  color: #679436;
+    
+  }
+  .list_voitures_items h4{
+    font-family: 'Lato', sans-serif;
+    color:grey;
+    
+  }
+
+  .list_voitures_items img{
+    height: 30vh;
+  }
+  .list_voitures_items:hover{
+    background-color: var(--blanc-claire);
+    border-bottom: var(--vert_second) 2px solid;
+  }
+  .list_voitures_items:hover h3{
+  color: var(--vert_second);
+  }
+
+
   @media only screen and (max-width: 768px) {
     nav {
       flex-direction: column;
