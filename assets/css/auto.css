@@ -213,7 +213,7 @@
   text-align: center;
   margin:20px auto;
   }
-/* FIN DE GAMMES */
+
   .game_toyota .list_voitures{
 
     display: flex;
@@ -241,8 +241,12 @@
   }
   .list_voitures_items h4{
     font-family: 'Lato', sans-serif;
-    color:grey;
-    
+    color:black;    
+  }
+  .list_voitures_items h5{
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+    color:var(--gris);    
   }
 
   .list_voitures_items img{
@@ -255,6 +259,50 @@
   .list_voitures_items:hover h3{
   color: var(--vert_second);
   }
+
+  .list_voitures_items a{
+    position:relative;
+    top:15px;
+    /*border: 1px solid rgb(21, 255, 0) ;
+    */border-radius: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: var(--vert_second);
+    color: var(--blanc-claire);
+
+}
+.list_voitures_items a:hover{
+  border: 1px var(--vert_second) solid ;
+  border-radius: 10px;
+  color: var(--vert_second);
+  background-color: var(--blanc-claire);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.catalogues{
+  font-family: 'Cantarell', sans-serif;
+  
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1px var(--vert_second) solid ;
+  margin: var(--ecart-haute) auto;
+  width: 20%;
+  padding: 10px;
+  color: var(--vert_base);
+}
+
+.catalogues:hover{
+  font-weight: bold;
+}
+/* FIN DE GAMMES */
+
+
 
 
   @media only screen and (max-width: 768px) {
