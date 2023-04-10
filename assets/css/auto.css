@@ -14,6 +14,8 @@
     --fond1:rgb(252, 246, 246);
     --fond2:#f6fbfd;
     --fond3:#faf6f0;
+
+    --rouge:#D42633;
 }
 
 *{
@@ -25,7 +27,7 @@
  
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
  
 
 /* header */
@@ -229,14 +231,14 @@
     font-family: 'Lato', sans-serif;
     height: 50vh;
     border-radius: 5px;
-    border-bottom: var(--vert_base) 2px solid;
+    border-bottom: var(--gris) 2px solid;
     padding: 10px;
     color: var(--gris);
     
   }
   .list_voitures_items h3{
   font-family: 'Lato', sans-serif;
-  color: #679436;
+  color: var(--gris);
     
   }
   .list_voitures_items h4{
@@ -254,28 +256,28 @@
   }
   .list_voitures_items:hover{
     background-color: var(--blanc-claire);
-    border-bottom: var(--vert_second) 2px solid;
+    border-bottom: var(--rouge) 2px solid;
   }
   .list_voitures_items:hover h3{
-  color: var(--vert_second);
+  color: var(--rouge);
   }
 
   .list_voitures_items a{
     position:relative;
     top:15px;
-    /*border: 1px solid rgb(21, 255, 0) ;
-    */border-radius: 10px;
+     border-radius: 10px;
     padding: 10px;
     text-transform: capitalize;
     font-weight: bold;
-    background-color: var(--vert_second);
+    background-color: var(--rouge);
     color: var(--blanc-claire);
+    
 
 }
 .list_voitures_items a:hover{
-  border: 1px var(--vert_second) solid ;
+  border: 1px var(--rouge) solid ;
   border-radius: 10px;
-  color: var(--vert_second);
+  color: var(--rouge);
   background-color: var(--blanc-claire);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -290,15 +292,16 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 20px;
-  border: 1px var(--vert_second) solid ;
+  border: 1px var(--rouge) solid ;
   margin: var(--ecart-haute) auto;
   width: 20%;
   padding: 10px;
-  color: var(--vert_base);
+  
 }
 
 .catalogues:hover{
   font-weight: bold;
+  color: var(--rouge)!important;
 }
 /* FIN DE GAMMES */
 .nous{
@@ -308,14 +311,37 @@
   height: 100vh;
   display: flex;
   /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
-
   padding: 20px;
   background-color: var(--blanc-claire);
-  
+  gap: 40px;
 }
+
+  .nous .nous_items{
+    font-family: 'Lato', sans-serif;
+    height: 50vh;
+    padding: 20px;
+    color: var(--gris);
+    background-color: #f5f5f5;
+  }
+
+  .nous .nous_items h1{
+  margin-bottom: 5px;
+  color: var(--bleue_second);
+  }
+  .nous .nous_items hr{
+  height: 5px;
+  width: 15%;
+  background-color: var(--bleue_second);
+  margin-bottom: 20px;
+  }
+
+  .nous .nous_items p{
+    font-size: 1.2rem;
+    text-align: justify;
+    }
 /* FIN NOUS */
 
 
