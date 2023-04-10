@@ -8,50 +8,15 @@
 
         .main{
             width: 80%;
-            height: 600px;
+            height: fit-content;
             margin: 10px auto;
             background-color: #faf8f8;
             padding: 20px;  
+            display: flex;
+            flex-direction: column;
              
         }
-		/* h1 {
-			text-align: center;
-			color: #333;
-		}
-		form {
-			background-color: #fff;
-			padding: 20px;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
-			max-width: 500px;
-			margin: 0 auto;
-		}
-		label {
-			display: block;
-			margin-bottom: 10px;
-			color: #666;
-		}
-		input[type=text], input[type=number], select {
-			width: 100%;
-			padding: 10px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
-			margin-bottom: 20px;
-		}
-		input[type=submit] {
-			background-color: #4CAF50;
-			color: #fff;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			float: right;
-		}
-		input[type=submit]:hover {
-			background-color: #45a049;
-		} */
-
+		 
 
         .vente_flex{
             display: flex;
@@ -77,20 +42,77 @@
             vertical-align: baseline;
             color: var(--bleue_base);
         }
+
         .vente_container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			/* box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			max-width: 800px; */
+			margin: 20px auto;
+            gap: 20px;
+
+        }
+        .vente_container h2{
+            text-transform: capitalize;
+            color: var(--bleue_base);
+            margin-bottom: 20px;
+        }
+        .vente_container img{
+            height: 40vh;
+        }
+
+        .vente_dist{
             display: flex;
             flex-direction: column;
             width: 100%;
             background-color: #fff;
 			padding: 20px;
 			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
-			max-width: 800px;
-			margin: 50px auto;
+			/* box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			max-width: 800px; */
+			
             gap: 20px;
 
         }
-        .vente_container h2{
-            color: var();
+        .vente_accepte{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			/* box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			max-width: 800px; */
+			margin: 20px auto;
+            gap: 20px;
+
         }
-	
+        .vente_accepte_card{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        .vente_accepte_card img{
+            height:8vh;
+        }
+        .vente_accepte_card a{
+           border-radius: 30px;
+           padding: 20px;
+           color:  var(--blanc-claire);
+           -webkit-border-radius: 30px;
+           -moz-border-radius: 30px;
+           -ms-border-radius: 30px;
+           -o-border-radius: 30px;
+}
+        .vente_accepte_card .commande{
+            border: 1px solid;
+            background-color: var( --vert_base);
+         
+        }
+        .vente_accepte_card .annuler{
+            background-color: var(--rouge);
+        }
