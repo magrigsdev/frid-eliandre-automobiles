@@ -350,7 +350,7 @@ footer {
   color: #fff; /* couleur de texte blanche */
   padding: 20px; /* espace intérieur de 20 pixels */
   text-align: center; /* centrage horizontal du contenu */
-  position: fixed; /* position fixe en bas de la page */
+    /* position fixe en bas de la page */
   left: 0; /* alignement à gauche */
   bottom: 0; /* alignement en bas */
   width: 100%; /* largeur de 100% */
