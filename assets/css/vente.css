@@ -1,0 +1,96 @@
+
+		body {
+			font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+			/* background-color: #f2f2f2; */
+		}
+
+        .main{
+            width: 80%;
+            height: 600px;
+            margin: 10px auto;
+            background-color: #faf8f8;
+            padding: 20px;  
+             
+        }
+		/* h1 {
+			text-align: center;
+			color: #333;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			max-width: 500px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #666;
+		}
+		input[type=text], input[type=number], select {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: right;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		} */
+
+
+        .vente_flex{
+            display: flex;
+            width: 100%;
+            background-color: var(--blanc);
+			padding: 20px;
+            text-align: center;
+            justify-content: center;
+			/* border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+			max-width: 100%;
+			 
+            
+        }
+        .vente_flex img{
+            height: 10vh;
+        }
+        .vente_flex h2{
+            margin-left: 20px;
+            font-family: 'lato', sans-serif;
+            text-align: center;
+            font-size: 3rem;
+            vertical-align: baseline;
+            color: var(--bleue_base);
+        }
+        .vente_container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			max-width: 800px;
+			margin: 50px auto;
+            gap: 20px;
+
+        }
+        .vente_container h2{
+            color: var();
+        }
+	

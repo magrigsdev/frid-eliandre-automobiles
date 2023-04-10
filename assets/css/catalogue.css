@@ -1,0 +1,106 @@
+.banner {
+    background-image: url("../pictures/fonds/daniel-leone-v7daTKlZzaw-unsplash.jpg  "); 
+  
+  }
+
+.catalogues_selection{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: space-between;
+
+    padding: 20px;
+    background-color: var(--blanc-claire);
+    margin: 0;
+    
+}
+
+.catalogues_selection h1 {
+    font-family: 'Cantarell', sans-serif;
+    margin-top: var(--ecart-haute);
+    color: var(--gris);
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .catalogues_selection hr {
+   width:8% ;
+   height: 5px;
+   background-color: var(--rouge);
+   text-align: center;
+   margin:20px auto;
+  }
+
+     .catalogues_list_voitures{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: var(--ecart-haute);    
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+    } 
+
+    
+  .catalogues_list_voitures_items{
+    font-family: 'Lato', sans-serif;
+    height: 54vh;
+    border-bottom: var(--gris) 2px solid;
+    padding: 10px;
+    color: var(--gris);
+    margin-top: 10px;
+    
+  }
+  .catalogues_list_voitures_items h3{
+  font-family: 'Lato', sans-serif;
+  color: var(--gris);
+    
+  }
+  .catalogues_list_voitures_items h4{
+    font-family: 'Lato', sans-serif;
+    color:black;    
+  }
+  .catalogues_list_voitures_items h5{
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+    color:var(--gris);    
+  }
+
+  .catalogues_list_voitures_items img{
+    height: 30vh;
+  }
+  .catalogues_list_voitures_items:hover{
+    background-color: var(--blanc-claire);
+    border-bottom: var(--rouge) 2px solid;
+  }
+  .catalogues_list_voitures_items:hover h3{
+  color: var(--rouge);
+  }
+
+  .catalogues_list_voitures_items a{
+    position:relative;
+    top:15px;
+     border-radius: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: var(--rouge);
+    color: var(--blanc-claire);
+    
+
+}
+.catalogues_list_voitures_items a:hover{
+  border: 1px var(--rouge) solid ;
+  border-radius: 10px;
+  color: var(--rouge);
+  background-color: var(--blanc-claire);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+ 
