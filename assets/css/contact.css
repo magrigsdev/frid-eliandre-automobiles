@@ -35,8 +35,8 @@ form {
     background-color: #45a049;
   }
 
-  .banner{
-    background-image: url("../pictures/fonds/luke-chesser-pJadQetzTkI-unsplash.jpg ");
+  .banner_contact{
+    background-color: var(--blanc-claire);
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -48,10 +48,56 @@ form {
     /* padding: 100px; */
     
   }
-  .banner img{
+  /* .banner img{
     height: 70vh;
   }
 
   .banner .mon_formulaire{
     height: 50vh;
+  } */
+  .main_contact{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 50px;
+    margin-top: 100px;
+  }
+
+  .main_contact .items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+
+  .main_contact .items label{
+    text-transform: capitalize;
+    color: var(--bleue_base);
+  }
+  .container_items{
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    /* border: #45a049 1px solid; */
+  }
+
+  .main_contact .items input, textarea{
+      width: 250px;
+  }
+
+  .container_items_souhait{
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    /* border: #45a049 1px solid; */
+  }
+
+  .items p{
+    padding-top: 30px;
+    color:#797676 ;
+    font-family: 'lato', sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
   }
