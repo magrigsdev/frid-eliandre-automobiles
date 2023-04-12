@@ -1,0 +1,49 @@
+
+
+
+
+.banner_propos {
+    
+    
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: 40px;
+  }
+
+  .main_apropos{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+     
+    padding: 50px;
+    margin-top: 100px;
+  }
+
+  .main_apropos img{
+    height: 60vh;
+  }
+
+  .main_apropos h1{
+    color: var(--gris);
+    margin-bottom: 10px;
+    font-family: 'lato', sans-serif ;
+  }
+
+  .main_apropos h3{
+    color: var(--gris);
+    margin-bottom: 10px;
+    font-family: 'lato', sans-serif ;
+  }
+
+  .main_apropos p{
+    color: var(--gris);
+    font-size: 1.2rem;
+    font-family: 'arial', sans-serif ;
+  }
