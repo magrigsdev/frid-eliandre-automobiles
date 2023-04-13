@@ -47,7 +47,7 @@
         background-image: url("../pictures/fonds/luke-chesser-pJadQetzTkI-unsplash.jpg ");
         background-size: cover;
         background-position: center center;
-        height: 100vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -81,6 +81,23 @@
         padding-left: 10px;
         margin-left: 20px;
     }
+
+    /* DEBUT DE CORPS   */  
+
+
+    .corps{
+        background-size: cover;
+        background-position: center center;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        justify-content: space-between;
+  
+        padding: 20px;
+        background-color: var(--blanc-claire);
+    } 
 
         .toyota_yaris{
       display: flex;
