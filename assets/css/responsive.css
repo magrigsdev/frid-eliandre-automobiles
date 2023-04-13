@@ -81,6 +81,29 @@
         padding-left: 10px;
         margin-left: 20px;
     }
+
+        .toyota_yaris{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;       
+    }
+
+     .toyota_yaris img{
+      height: 40vh;
+    }
+
+        .toyota_yaris .un {
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      font-family: 'Lato', sans-serif;
+      color: var(--bleue_second);
+    }
+    .toyota_yaris .deux {
+      text-transform: lowercase;
+      font-size: 1rem;
+      font-family: 'Lato', sans-serif;
+      
+    }
   }
 
 
