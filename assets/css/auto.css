@@ -359,7 +359,7 @@ footer {
   width: 100%; /* largeur de 100% */
 }
 
-  @media only screen and (max-width: 768px) {
+  /* @media only screen and (max-width: 768px) {
     nav {
       flex-direction: column;
       align-items: flex-start;
@@ -374,4 +374,4 @@ footer {
       margin: 10px 0;
     }
   }
-  
+   */
